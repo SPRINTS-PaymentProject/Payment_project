@@ -79,10 +79,13 @@ EN_terminalError_t setMaxAmount(ST_terminalData_t * termData,float maxAmount){
 }
 EN_terminalError_t isValidCardPAN(ST_cardData_t *cardData){
     EN_terminalError_t ret_state = INVALID_CARD;
-    int32_t sum=0, multipler = 1,multi_res =0;
-    int i =strlen(cardData->primaryAccountNumber);
+    int32_t sum=0, multipler = 1,multi_res =0, len=0;
+    len=strlen(cardData->primaryAccountNumber);
+    int32_t i = len;
+    if (len < 16 || len >19)
+		return INVALID_CARD;
     for( ;i >= 1;i--){
-        if(i%2 == 0){
+        if((16-i+1)%2 == 0){
             multipler = 2;
         }else{
             multipler = 1;

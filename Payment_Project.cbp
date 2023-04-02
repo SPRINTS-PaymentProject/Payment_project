@@ -31,13 +31,31 @@
 		<Compiler>
 			<Add option="-Wall" />
 		</Compiler>
+		<Unit filename="Application/application.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="Application/application.h" />
+		<Unit filename="Card/card.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="Card/card.h" />
+		<Unit filename="Server/server.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="Server/server.h" />
+		<Unit filename="Terminal/terminal.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="Terminal/terminal.h" />
+		<Unit filename="Test_Cases/testcase.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="Test_Cases/testcase.h" />
 		<Unit filename="main.c">
 			<Option compilerVar="CC" />
 		</Unit>
-		<Unit filename="terminal.c">
-			<Option compilerVar="CC" />
-		</Unit>
-		<Unit filename="terminal.h" />
+		<Unit filename="main.h" />
+		<Unit filename="std_types.h" />
 		<Extensions>
 			<lib_finder disable_auto="1" />
 		</Extensions>

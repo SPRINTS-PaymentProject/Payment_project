@@ -87,7 +87,11 @@ void getTransactionDateTest(void)
 
 			printf("ok\n");
 		}
-		else printf("wrong date\n");
+		else{
+
+            printf("wrong date\n");
+		}
+
 
 		i++;
 
@@ -113,7 +117,12 @@ void isCardExpriedTest(void)
 
 					printf("\nok\n");
 				}
-				else printf("card expired\n");
+				else
+                {
+
+                    printf("card expired\n");
+
+                }
 
 
 			}
@@ -193,7 +202,7 @@ void isBelowMaxAmountTest(void)
 }
 
 void isValidCardPANTest(void)
-{
+{   uint8_t PAN_tmp[25]={0};
 	uint8_t i = 0;
 	printf("tester name : Arafa Arafa\nFunction Name: isValidCardPAN\n");
 	while (1)
@@ -206,9 +215,11 @@ void isValidCardPANTest(void)
 
 			printf("luhn number valid\n");
 		}
-		else printf("invalid card\n");
+		else
+        {printf("invalid card\n");}
 
 		i++;
+    strcpy(card_data.primaryAccountNumber, PAN_tmp);
 
 	}
 }

@@ -6,6 +6,12 @@
 int main()
 {
 
-    appStart();
+    //appStart();
+    //getTransactionDateTest();
+    //isCardExpriedTest();
+    //getTransactionAmountTest();
+    //setMaxAmountTest();
+    //isBelowMaxAmountTest();
+    isValidCardPANTest();
     return 0;
 }
